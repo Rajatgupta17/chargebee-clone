@@ -1,0 +1,70 @@
+.card-content {
+  width: 488px;
+  padding-left: 100px;
+}
+.top-head {
+  display: flex;
+  align-content: flex-start;
+  font-size: 14px;
+  color: purple;
+}
+h2 {
+  display: flex;
+  align-content: flex-start;
+}
+.para {
+  width: 360px;
+  font-size: 18px;
+  display: flex;
+  text-align: left;
+}
+.checks {
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.done-icon {
+  color: green;
+  margin-right: 4px;
+}
+/* Button {
+  width: 119px;
+  font-size: 10px;
+  text-transform: none;
+} */
+.arrow-icon {
+  margin-left: 6px;
+}
+.card-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.image {
+  width: 555px;
+  height: 388px;
+}
+a {
+  display: flex;
+  width: 107px;
+  height: 39px;
+  color: #000ff0;
+  font-size: 12px;
+  border: 1px solid #000ff0;
+  border-radius: 5px;
+  align-items: center;
+  padding-left: 10px;
+}
+span {
+  color: #000ff0;
+}
+.arrow-icon {
+  margin-left: 7px;
+}
+a:hover > .arrow-icon {
+  margin-left: 1px;
+  transition: 200ms;
+  color: #000ff0;
+}

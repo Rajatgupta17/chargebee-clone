@@ -1,0 +1,74 @@
+.MuiPaper-root {
+  background-color: rgb(238, 244, 248);
+  box-shadow: none;
+}
+img {
+  height: 34x;
+  width: 110px;
+}
+.nav-inside {
+  background-color: rgb(238, 244, 248);
+  display: flex;
+  justify-content: space-around;
+  box-shadow: none;
+}
+.brand {
+  height: 74px;
+  display: flex;
+  justify-content: flex-start;
+  flex: 0.1;
+  margin-left: 20px;
+}
+.title {
+  color: black;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: 800px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.title:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.list {
+  height: 74px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0.63;
+}
+.nav-right {
+  height: 74px;
+  display: flex;
+  flex: 0.27;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+Button {
+  height: 36px;
+  width: 167px;
+}
+
+.button-demo-nav {
+  width: 167px;
+  height: 36px;
+  border: none;
+  color: white;
+  background-color: #ff7846;
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+.button-demo-nav > .arrow-icon-demo {
+  margin-left: 1px;
+  transition: 0.2s ease-out;
+}
+.button-demo-nav:hover > .arrow-icon-demo {
+  margin-left: 5px;
+  transition: 0.2s ease-out;
+}

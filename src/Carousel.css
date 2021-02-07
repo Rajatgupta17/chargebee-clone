@@ -1,0 +1,58 @@
+.bg-purple {
+  background-color: rgb(24, 16, 73);
+  height: 260px;
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.bg-purple-sc {
+  margin-top: -200px;
+  margin-bottom: 100px;
+  box-shadow: none;
+  color: white;
+  /* background-color: rgb(24, 16, 73); */
+}
+.list1,
+.list2,
+.list3 {
+  margin-top: 0;
+  padding: 4px;
+  color: white;
+  margin-left: 70px;
+  font-size: 14px;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  opacity: 0.75;
+  font-weight: 700;
+}
+.active {
+  opacity: 1;
+  border-bottom: 2px solid white;
+}
+.carso {
+  z-index: 1;
+  margin-left: 40px;
+}
+.tabs-sc {
+  padding-left: 30%;
+  border: none;
+  color: white;
+  background-color: rgb(24, 16, 73);
+  /* background-color: rgb(24, 16, 73); */
+}
+.tabs-ex {
+  color: white;
+}
+.MuiTabs-root {
+  box-shadow: none;
+}
+.MuiTab-wrapper span {
+  color: white;
+}
+.PrivateTabIndicator-colorPrimary-4 {
+  background-color: white;
+}
