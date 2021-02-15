@@ -11,7 +11,7 @@ class SlideTwo extends Component {
             <div className="tab-header-t">
               <p>Saved</p>
               <div className="tab-count-t">
-                <img src={Hrs}></img>
+                <img src={Hrs} width="200px" height="59px"></img>
               </div>
             </div>
             <div className="tab-footer-t">

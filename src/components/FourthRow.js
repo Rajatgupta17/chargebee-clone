@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../FourthRow.css";
+import "../Cards.css";
 import revenue from "../images/revenue.svg";
 import Salesforce from "../images/salesforce.png";
 import Stripe from "../images/Stripe.png";
@@ -29,10 +30,7 @@ class FourthRow extends Component {
                 Handle quotes, approvals, acceptance, and collections seamlessly
                 from within the CRM
               </p>
-              <a className="button button-card">
-                <span>Learn More</span>
-                <ArrowForwardSharpIcon className="arrow-icon" />
-              </a>
+              <a className="button  button-card link-icon">Learn More</a>
             </div>
             <div className="card-one">
               <h3 className="org-head">Offer More Payment Methods</h3>
@@ -45,10 +43,7 @@ class FourthRow extends Component {
                 Accept payments across a wide array of gateways, geographies,
                 and currencies.
               </p>
-              <a className="button button-card">
-                <span>Learn More</span>
-                <ArrowForwardSharpIcon className="arrow-icon" />
-              </a>
+              <a className="button button-card link-icon">Learn More</a>
             </div>
           </div>
           <div className="feature-cards-two">
@@ -60,20 +55,14 @@ class FourthRow extends Component {
                 Reconcile books in seconds, handle compliance, and recognize
                 revenue painlessly.
               </p>
-              <a className="button button-card">
-                <span>Learn More</span>
-                <ArrowForwardSharpIcon className="arrow-icon" />
-              </a>
+              <a className="button button-card link-icon">Learn More</a>
             </div>
           </div>
           <div className="revenue-wf">
             <p className="revenue-wf-text">
               Talk to us today about your revenue workflow
             </p>
-            <a className="button button-demo">
-              Schedule a Demo
-              <ArrowForwardSharpIcon className="arrow-icon-demo" />
-            </a>
+            <a className="button button-demo">Schedule a Demo</a>
           </div>
           <h1 className="cb-big-head">
             Great Products Deserve Hyper Growth. Chargebee Makes it Easy.

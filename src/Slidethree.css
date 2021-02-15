@@ -34,7 +34,11 @@
 }
 .tab-count-th {
   text-align: left;
-  margin-top: 15px;
+  margin-top: 8px;
+}
+.tab-count-th img {
+  height: 59px;
+  padding: 0;
 }
 .tab-headings-th {
   font-size: 20px;
@@ -46,16 +50,7 @@
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
 }
-/* .read-story-th::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 1px;
-  width: 80px;
-  border-top: 1px solid white;
-  margin-top: 20px;
-  margin-left: 190px;
-} */
+
 .read-story-link-th {
   margin-left: 100px;
   width: 132px;
@@ -97,6 +92,16 @@
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 0;
+}
+.read-story-th::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 80px;
+  border-top: 1px solid white;
+  margin-top: 20px;
+  margin-left: 230px;
 }
 .tab-right-th {
   display: flex;

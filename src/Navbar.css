@@ -19,6 +19,9 @@ img {
   flex: 0.1;
   margin-left: 20px;
 }
+.brand:hover {
+  cursor: pointer;
+}
 .title {
   color: black;
   margin-right: 15px;
@@ -29,8 +32,9 @@ img {
   font-weight: 500;
 }
 .title:hover {
-  color: grey;
+  opacity: 0.5;
   cursor: pointer;
+  transition: 0.1s;
 }
 
 .list {
@@ -64,11 +68,123 @@ Button {
   font-size: 14px;
   border-radius: 2px;
 }
-.button-demo-nav > .arrow-icon-demo {
-  margin-left: 1px;
-  transition: 0.2s ease-out;
+.button-demo-nav:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: solid white;
+  border-width: 0px 0px 2px 2px;
+  transition: 0.3s;
+  margin-top: 1px;
+  height: 7px;
+  width: 8px;
+  right: 4%;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+  transform: rotate(-135deg);
 }
-.button-demo-nav:hover > .arrow-icon-demo {
-  margin-left: 5px;
-  transition: 0.2s ease-out;
+
+.button-demo-nav:after {
+  transition: 0s;
+  content: "";
+  display: inline-block;
+  background-image: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%09%3Cpath%20d%3D%22M13.025%201l-2.847%202.828%206.176%206.176h-16.354v3.992h16.354l-6.176%206.176%202.847%202.828%2010.975-11z%22%20fill%3D%22rgb(255%2C255%2C255)%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 16px;
+  top: 10px;
+  right: 8px;
+  margin: 6px 7px;
+  margin-top: 7px;
+  opacity: 0;
+}
+.button-demo-nav:hover::before {
+  opacity: 0;
+  transition: 0s;
+}
+.button-demo-nav:hover::after {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  content: "";
+  display: inline-block;
+  background-image: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%09%3Cpath%20d%3D%22M13.025%201l-2.847%202.828%206.176%206.176h-16.354v3.992h16.354l-6.176%206.176%202.847%202.828%2010.975-11z%22%20fill%3D%22rgb(255%2C255%2C255)%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 16px;
+  top: 10px;
+  right: 8px;
+  margin: 6px 7px;
+  margin-top: 7px;
+}
+.nav-login {
+  border: none;
+  color: black;
+  line-height: 18px;
+  font-size: 15px;
+  font-weight: 800px;
+}
+.nav-login:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: solid black;
+  border-width: 0px 0px 2px 2px;
+  transition: 0.5s;
+  margin-top: 1px;
+  height: 7px;
+  width: 8px;
+  right: 15.6%;
+  opacity: 1;
+  transition: 0.8s;
+  transform: rotate(-135deg);
+}
+.nav-login:after {
+  opacity: 0;
+  transition: 0s;
+  content: "";
+  display: inline-block;
+  background-image: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%09%3Cpath%20d%3D%22M13.025%201l-2.847%202.828%206.176%206.176h-16.354v3.992h16.354l-6.176%206.176%202.847%202.828%2010.975-11z%22%20fill%3D%22rgb(0%2C0%2C0)%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 16px;
+  top: 10px;
+  right: 8px;
+  margin: 6px 7px;
+  margin-top: 7px;
+}
+
+.nav-login:hover::before {
+  opacity: 0;
+  transition: 0s;
+}
+.nav-login:hover::after {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  content: "";
+  display: inline-block;
+  background-image: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%09%3Cpath%20d%3D%22M13.025%201l-2.847%202.828%206.176%206.176h-16.354v3.992h16.354l-6.176%206.176%202.847%202.828%2010.975-11z%22%20fill%3D%22rgb(0%2C0%2C0)%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 16px;
+  top: 10px;
+  right: 8px;
+  margin: 6px 7px;
+  margin-top: 7px;
+}
+.lock-icon {
+  color: rgb(238, 116, 70);
+  height: 10px;
+  width: 12px;
+  margin-right: 3px;
+}
+.nav-rightlog:hover > a {
+  transition: 2s;
 }

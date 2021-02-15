@@ -40,10 +40,7 @@ class ThirdRow extends Component {
             </p>
           </div>
 
-          <a className="button">
-            <span>Learn More</span>
-            <ArrowForwardSharpIcon className="arrow-icon" />
-          </a>
+          <a className="button link-icon">Learn More</a>
         </div>
         <img src={third} className="image" />
       </div>

@@ -16,18 +16,13 @@ export default class Footer extends Component {
             <br /> What The Future Looks Like.
           </div>
           <div className="button-right">
-            <a className="button button-demo">
-              Schedule a Demo
-              <ArrowForwardSharpIcon className="arrow-icon-demo" />
-            </a>
+            <a className="button button-demo-footer">Schedule a Demo</a>
           </div>
         </div>
         <div className="footer-middle">
           <div className="list-footer">
             <div className="list-footer-whole">
-              <div className="list-header">
-                Product <ArrowForwardSharpIcon className="arr-icon" />
-              </div>
+              <div className="list-header list-header-one">Product</div>
               <ul className="list-items">
                 <li>Subscription Management</li>
                 <li>Recurring Billing and Invoicing</li>
@@ -39,9 +34,7 @@ export default class Footer extends Component {
               </ul>
             </div>
             <div className="list-footer-whole">
-              <div className="list-header">
-                Help & Support <ArrowForwardSharpIcon className="arr-icon" />
-              </div>
+              <div className="list-header list-header-two">Help & Support</div>
               <ul className="list-items">
                 <li>Security</li>
                 <li>FAQs</li>
@@ -53,9 +46,7 @@ export default class Footer extends Component {
               </ul>
             </div>
             <div className="list-footer-whole">
-              <div className="list-header">
-                Resources <ArrowForwardSharpIcon className="arr-icon" />
-              </div>
+              <div className="list-header list-header-three">Resources</div>
               <ul className="list-items">
                 <li>Blogs</li>
                 <li>Compare Payment Gateways</li>
@@ -66,9 +57,7 @@ export default class Footer extends Component {
               </ul>
             </div>
             <div className="list-footer-whole">
-              <div className="list-header">
-                Company <ArrowForwardSharpIcon className="arr-icon" />
-              </div>
+              <div className="list-header list-header-four">Company</div>
               <ul className="list-items">
                 <li>Customers</li>
                 <li>Partners</li>
@@ -85,10 +74,10 @@ export default class Footer extends Component {
             <img src={CGLogo}></img>
           </div>
           <div className="social-links">
-            <FacebookIcon />
-            <TwitterIcon />
-            <YouTubeIcon />
-            <LinkedInIcon />
+            <FacebookIcon className="sl-subClass" />
+            <TwitterIcon className="sl-subClass" />
+            <YouTubeIcon className="sl-subClass" />
+            <LinkedInIcon className="sl-subClass" />
           </div>
         </div>
       </div>

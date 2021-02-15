@@ -52,6 +52,10 @@ const useStyles = makeStyles((theme) => ({
   tabs: {
     color: "white",
   },
+  indicator: {
+    backgroundColor: "white",
+    width: "40px",
+  },
 }));
 
 export default function ScrollableTabsButtonAuto() {
@@ -65,7 +69,12 @@ export default function ScrollableTabsButtonAuto() {
   return (
     <div className={classes.root}>
       <div className="bg-purple"></div>
-      <AppBar position="static" color="default" className="bg-purple-sc">
+      <AppBar
+        position="static"
+        color="default"
+        className="bg-purple-sc"
+        elevation="0"
+      >
         <Tabs
           value={value}
           onChange={handleChange}
@@ -75,14 +84,18 @@ export default function ScrollableTabsButtonAuto() {
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
           className="tabs-sc"
+          classes={{
+            indicator: classes.indicator,
+          }}
         >
           <Tab
             className={classes.tabs}
             label="Rethink pricing"
+            disableRipple="true"
             {...a11yProps(0)}
           />
-          <Tab label="Automate FinOps" {...a11yProps(1)} />
-          <Tab label="Go Global" {...a11yProps(2)} />
+          <Tab label="Automate FinOps" disableRipple="true" {...a11yProps(1)} />
+          <Tab label="Go Global" disableRipple="true" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>

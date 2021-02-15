@@ -26,13 +26,9 @@ class Homepage extends Component {
           </p>
           <p className="small-para">and scale recurring revenue.</p>
           <div className="inline-buttons">
-            <a className="button button-demo b1">
-              Schedule a Demo
-              <ArrowForwardSharpIcon className="arrow-icon-demo" />
-            </a>
-            <a className="button button-demo b2">
+            <a className="button button-demo ">Schedule a Demo</a>
+            <a className="button button-demo-b2 " style={{ fontSize: "18px" }}>
               Sign up for free
-              <ArrowForwardSharpIcon className="arrow-icon-demo" />
             </a>
           </div>
         </div>

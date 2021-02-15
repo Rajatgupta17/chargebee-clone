@@ -29,51 +29,39 @@
   display: flex;
   justify-content: center;
 }
-.b1 {
-  display: flex;
-  width: 236px;
-  background-color: #500ad2;
-  box-shadow: none;
-  border: none;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 5px;
+.button-demo {
+  margin-right: 15px;
 }
-.b1 > .arrow {
-  padding-left: 1px;
-  transition: padding-left 0.2s ease-out;
+.button-demo-b2 {
+  margin-left: 15px;
+  width: 170px;
+  height: 52px;
+  align-self: flex-end;
+  font-size: 29px;
+  font-weight: 100;
+  text-align: center;
 }
-.b1:hover > .arrow {
-  padding-left: 7px;
-  transition: 0.2s ease-out;
+.button-demo-b2:after {
+  content: "";
+  display: inline-block;
+  background-image: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%09%3Cpath%20d%3D%22M13.025%201l-2.847%202.828%206.176%206.176h-16.354v3.992h16.354l-6.176%206.176%202.847%202.828%2010.975-11z%22%20fill%3D%22rgb(0%2C15%2C240)%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 16px;
+  top: 10px;
+  right: 8px;
+  margin: 6px 6px;
+  margin-top: 7px;
+  transition: all 0.3s ease-in-out;
 }
-.b2 > .arrow {
-  padding-left: 1px;
-  transition: padding-left 0.2s ease-out;
-}
-.b2:hover > .arrow {
-  padding-left: 7px;
-  transition: 0.2s ease-out;
-}
-.button-demo.b2 {
-  display: flex;
-  background: white;
-  margin-left: 20px;
-  color: #000ff0;
-  border: 1px solid #000ff0;
-  margin-top: 30px;
-  max-width: 202px;
-  height: 54px;
-  font-size: 20px;
-  font-weight: 500;
-  padding-left: 24px;
-  box-shadow: none;
-  padding-right: 24px;
-}
-.b1:hover,
-.b2:hover {
+.button-demo-b2:hover {
   cursor: pointer;
+}
+.button-demo-b2:hover:after {
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
 }
 .svg {
   height: 825px;

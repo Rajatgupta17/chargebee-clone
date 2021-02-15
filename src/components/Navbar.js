@@ -5,6 +5,7 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import ArrowForwardSharpIcon from "@material-ui/icons/ArrowForwardSharp";
+import LockIcon from "@material-ui/icons/Lock";
 class Navbar extends Component {
   render() {
     return (
@@ -16,27 +17,30 @@ class Navbar extends Component {
             </div>
 
             <div className="list">
-              <div className="title" href="#">
+              <div className="title" id="prod" href="#">
                 Products
               </div>
-              <div className="title" href="#">
+              <div className="title" id="price" href="#">
                 Pricing
               </div>
-              <div className="title" href="#">
+              <div className="title" id="sol" href="#">
                 Solutions
               </div>
-              <div className="title" href="#">
+              <div className="title" id="cus" href="#">
                 Customers
               </div>
-              <div className="title" href="#">
+              <div className="title" id="res" href="#">
                 Resources
               </div>
             </div>
             <div className="nav-right">
-              <a className=" button-demo-nav">
-                Schedule a Demo
-                <ArrowForwardSharpIcon className="arrow-icon-demo" />
-              </a>
+              <div className="nav-rightlog">
+                <a className="nav-login">
+                  <LockIcon className="lock-icon" />
+                  Log in
+                </a>
+              </div>
+              <a className=" button-demo-nav">Schedule a Demo</a>
             </div>
           </div>
         </AppBar>

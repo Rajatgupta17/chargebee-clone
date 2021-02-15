@@ -18,7 +18,7 @@ class SlideThree extends Component {
               <h2 className="tab-headings-th">
                 and expanded globally from Europe
               </h2>
-              <div className="read-story-t hidden-th">
+              <div className="read-story-th hidden-th">
                 <div className="read-story-link-th">Read Story →</div>
               </div>
             </div>
